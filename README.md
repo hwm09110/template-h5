@@ -1,4 +1,4 @@
-# banpai-h5
+# template-h5
 
 ## Project setup
 ```
