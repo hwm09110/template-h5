@@ -1,0 +1,12 @@
+/* 重置vant组件样式 */
+
+.van-dialog{
+  width: 540px;
+  border-radius: 10px;
+}
+.van-dialog .van-dialog__message{
+  font-size: 28px;
+}
+.van-dialog .van-button__content{
+  font-size: 32px;
+}

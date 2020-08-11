@@ -1,10 +1,14 @@
 // 所有接口出口
 let requireRouteFilePaths = require.context('./', true, /^.\/.*\/.*\.js$/)
-let allApi = requireRouteFilePaths.keys()
+let apiArr = requireRouteFilePaths.keys()
                   .map(routeFilePath => requireRouteFilePaths(routeFilePath)["default"])
-                  .reduce((prev,next) => prev.concat(next));
+                  .reduce((prev,next) => prev.concat(next), []);
 
+let allApi = {};
+apiArr.forEach(item => {
+  Object.assign(allApi, item);
+});
 console.log('allApi', allApi);
 
-export default  allApi
+export default  allApi;
 

@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import request from "./request";
 
+import './assets/css/reset.css'
 import './assets/scss/index.scss'
 import './assets/js/flexible'
 

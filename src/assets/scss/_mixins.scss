@@ -1,0 +1,25 @@
+
+// 显示n行文本，多出省略号显示
+@mixin single-ellipsis() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 显示n行文本，多出省略号显示
+@mixin mutil-ellipsis($n:2) {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;
+  overflow: hidden;
+}
+
+// 背景图
+@mixin bg-image($width, $height, $url) {
+  width: $width;
+  height: $height;
+  background-image: url($url);
+  background-size: $width $height;
+}
