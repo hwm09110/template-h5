@@ -98,9 +98,9 @@ module.exports = {
       //     camelCase: 'only'
       // },
       // stylus: {}
-      // scss: {
-      //   prependData: `@import "~@/variables.scss";` //向预处理器 Loader 传递选项，可以这样向所有 Sass 样式传入共享的全局变量
-      // },
+      scss: {
+        additionalData: `@import "~@/assets/scss/index.scss";` //向预处理器 Loader 传递选项，可以这样向所有 Sass 样式传入共享的全局变量
+      },
     }
   },
   parallel: require('os').cpus().length > 1, // 构建时开启多进程处理babel编译
