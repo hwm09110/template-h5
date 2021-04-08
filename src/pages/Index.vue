@@ -16,6 +16,7 @@ export default {
   text-align: center;
   font-size: 32px;
   font-weight: normal;
+  color: $color-sub-theme-d;
 }
 </style>
 
